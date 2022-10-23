@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6212D6CE288F1F95000633B7 /* SignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D6CD288F1F95000633B7 /* SignInManager.swift */; };
+		6212D6D0288F2138000633B7 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D6CF288F2138000633B7 /* DBManager.swift */; };
+		6212D6D4288F307E000633B7 /* SignInViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D6D3288F307E000633B7 /* SignInViewModelTest.swift */; };
+		6212D6D6288F30FC000633B7 /* MockSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D6D5288F30FC000633B7 /* MockSignInManager.swift */; };
+		6212D6D8288F40C8000633B7 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D6D7288F40C8000633B7 /* MockNetworkManager.swift */; };
+		6212D6DA288F411E000633B7 /* ImageViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D6D9288F411E000633B7 /* ImageViewModelTest.swift */; };
+		62444F7628592B4100408D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444F7528592B4100408D26 /* AppDelegate.swift */; };
+		62444F7828592B4100408D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444F7728592B4100408D26 /* SceneDelegate.swift */; };
+		62444F7D28592B4100408D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62444F7B28592B4100408D26 /* Main.storyboard */; };
+		62444F7F28592B4100408D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62444F7E28592B4100408D26 /* Assets.xcassets */; };
+		62444F8228592B4100408D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62444F8028592B4100408D26 /* LaunchScreen.storyboard */; };
+		62444F8A28592B7600408D26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444F8928592B7600408D26 /* SignUpViewController.swift */; };
+		62444F8C28592BD500408D26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444F8B28592BD500408D26 /* SignInViewController.swift */; };
+		62444FAB285A483100408D26 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FAA285A483100408D26 /* Coordinator.swift */; };
+		62444FAD285A488300408D26 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FAC285A488300408D26 /* Storyboarded.swift */; };
+		62444FAF285A49CC00408D26 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FAE285A49CC00408D26 /* HomeViewController.swift */; };
+		62444FB1285A4A5400408D26 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FB0285A4A5400408D26 /* MainCoordinator.swift */; };
+		62444FB4285A5B4E00408D26 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FB3285A5B4E00408D26 /* SignInViewModel.swift */; };
+		62444FB7285B99BD00408D26 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FB6285B99BD00408D26 /* TableViewCell.swift */; };
+		62444FBA285BAE6B00408D26 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FB9285BAE6B00408D26 /* Model.swift */; };
+		62444FBD285BAF1200408D26 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62444FBC285BAF1200408D26 /* NetworkManager.swift */; };
+		625B2767286B8AC500EE6CE5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2766286B8AC500EE6CE5 /* FirebaseAnalytics */; };
+		625B2769286B8AC500EE6CE5 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2768286B8AC500EE6CE5 /* FirebaseAnalyticsSwift */; };
+		625B276B286B8AC500EE6CE5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 625B276A286B8AC500EE6CE5 /* FirebaseAuth */; };
+		625B276D286B8AC500EE6CE5 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 625B276C286B8AC500EE6CE5 /* FirebaseAuthCombine-Community */; };
+		625B276F286B8AC500EE6CE5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 625B276E286B8AC500EE6CE5 /* FirebaseDatabase */; };
+		625B2771286B8AC500EE6CE5 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2770286B8AC500EE6CE5 /* FirebaseDatabaseSwift */; };
+		625B2773286B8AC500EE6CE5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2772286B8AC500EE6CE5 /* FirebaseFirestore */; };
+		625B2775286B8AC500EE6CE5 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2774286B8AC500EE6CE5 /* FirebaseFirestoreCombine-Community */; };
+		625B2777286B8AC500EE6CE5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2776286B8AC500EE6CE5 /* FirebaseFirestoreSwift */; };
+		625B2779286B8AC500EE6CE5 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2778286B8AC500EE6CE5 /* FirebaseFunctionsCombine-Community */; };
+		625B277B286B8AC500EE6CE5 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 625B277A286B8AC500EE6CE5 /* FirebaseInAppMessaging-Beta */; };
+		625B277D286B8AC500EE6CE5 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 625B277C286B8AC500EE6CE5 /* FirebaseInAppMessagingSwift-Beta */; };
+		625B277F286B8AC500EE6CE5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 625B277E286B8AC500EE6CE5 /* FirebaseMessaging */; };
+		625B2781286B8AC500EE6CE5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2780286B8AC500EE6CE5 /* FirebaseStorage */; };
+		625B2783286B8AC500EE6CE5 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2782286B8AC500EE6CE5 /* FirebaseStorageCombine-Community */; };
+		625B2786286B8B1400EE6CE5 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2785286B8B1400EE6CE5 /* Realm */; };
+		625B2788286B8B1400EE6CE5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2787286B8B1400EE6CE5 /* RealmSwift */; };
+		625B4111285BB8CF001D36E9 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B4110285BB8CF001D36E9 /* ImageViewModel.swift */; };
+		62ABA85695B6A041CA59352F /* Pods_SignUp_ImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9613E6896D2988C48890583A /* Pods_SignUp_ImageCache.framework */; };
+		62BC23812878C06A0043EB21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62BC23802878C06A0043EB21 /* GoogleService-Info.plist */; };
+		62C3E5A3286233FE00EA1D80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3E5A2286233FE00EA1D80 /* User.swift */; };
+		62C66822288B156A006DE078 /* SignUp_ImageCacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C66821288B156A006DE078 /* SignUp_ImageCacheUITests.swift */; };
+		62C66824288B156A006DE078 /* SignUp_ImageCacheUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C66823288B156A006DE078 /* SignUp_ImageCacheUITestsLaunchTests.swift */; };
+		62E5F21628B42181000D44D0 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E5F21528B42181000D44D0 /* KeychainManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6212D6C7288B1CC6000633B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62444F6A28592B4100408D26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62444F7128592B4100408D26;
+			remoteInfo = "SignUp&ImageCache";
+		};
+		62C66825288B156A006DE078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62444F6A28592B4100408D26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62444F7128592B4100408D26;
+			remoteInfo = "SignUp&ImageCache";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6212D6C3288B1CC6000633B7 /* SignUp&ImageCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignUp&ImageCacheTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6212D6CD288F1F95000633B7 /* SignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInManager.swift; sourceTree = "<group>"; };
+		6212D6CF288F2138000633B7 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		6212D6D3288F307E000633B7 /* SignInViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTest.swift; sourceTree = "<group>"; };
+		6212D6D5288F30FC000633B7 /* MockSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignInManager.swift; sourceTree = "<group>"; };
+		6212D6D7288F40C8000633B7 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		6212D6D9288F411E000633B7 /* ImageViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelTest.swift; sourceTree = "<group>"; };
+		62444F7228592B4100408D26 /* SignUp&ImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SignUp&ImageCache.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62444F7528592B4100408D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62444F7728592B4100408D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		62444F7C28592B4100408D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62444F7E28592B4100408D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62444F8128592B4100408D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62444F8328592B4100408D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62444F8928592B7600408D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		62444F8B28592BD500408D26 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		62444FAA285A483100408D26 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		62444FAC285A488300408D26 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		62444FAE285A49CC00408D26 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		62444FB0285A4A5400408D26 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		62444FB3285A5B4E00408D26 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		62444FB6285B99BD00408D26 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		62444FB9285BAE6B00408D26 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		62444FBC285BAF1200408D26 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		625B271C286B6E4200EE6CE5 /* SignUp&ImageCache.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SignUp&ImageCache.entitlements"; sourceTree = "<group>"; };
+		625B4110285BB8CF001D36E9 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		62BC23802878C06A0043EB21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62C3E5A2286233FE00EA1D80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		62C6681F288B156A006DE078 /* SignUp&ImageCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignUp&ImageCacheUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C66821288B156A006DE078 /* SignUp_ImageCacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_ImageCacheUITests.swift; sourceTree = "<group>"; };
+		62C66823288B156A006DE078 /* SignUp_ImageCacheUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_ImageCacheUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62E5F21528B42181000D44D0 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		72D36C76D3FB2E0CBA76FA67 /* Pods-SignUp&ImageCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUp&ImageCache.release.xcconfig"; path = "Target Support Files/Pods-SignUp&ImageCache/Pods-SignUp&ImageCache.release.xcconfig"; sourceTree = "<group>"; };
+		9613E6896D2988C48890583A /* Pods_SignUp_ImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignUp_ImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2588110998797154E548934 /* Pods-SignUp&ImageCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUp&ImageCache.debug.xcconfig"; path = "Target Support Files/Pods-SignUp&ImageCache/Pods-SignUp&ImageCache.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6212D6C0288B1CC6000633B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62444F6F28592B4100408D26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625B2771286B8AC500EE6CE5 /* FirebaseDatabaseSwift in Frameworks */,
+				625B2775286B8AC500EE6CE5 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				625B276F286B8AC500EE6CE5 /* FirebaseDatabase in Frameworks */,
+				625B2779286B8AC500EE6CE5 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				625B2769286B8AC500EE6CE5 /* FirebaseAnalyticsSwift in Frameworks */,
+				625B276B286B8AC500EE6CE5 /* FirebaseAuth in Frameworks */,
+				625B2786286B8B1400EE6CE5 /* Realm in Frameworks */,
+				625B277B286B8AC500EE6CE5 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				625B2783286B8AC500EE6CE5 /* FirebaseStorageCombine-Community in Frameworks */,
+				625B2788286B8B1400EE6CE5 /* RealmSwift in Frameworks */,
+				625B2767286B8AC500EE6CE5 /* FirebaseAnalytics in Frameworks */,
+				625B277F286B8AC500EE6CE5 /* FirebaseMessaging in Frameworks */,
+				625B276D286B8AC500EE6CE5 /* FirebaseAuthCombine-Community in Frameworks */,
+				625B2773286B8AC500EE6CE5 /* FirebaseFirestore in Frameworks */,
+				625B2781286B8AC500EE6CE5 /* FirebaseStorage in Frameworks */,
+				625B277D286B8AC500EE6CE5 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				625B2777286B8AC500EE6CE5 /* FirebaseFirestoreSwift in Frameworks */,
+				62ABA85695B6A041CA59352F /* Pods_SignUp_ImageCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C6681C288B156A006DE078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		129271B1FBB241926C2056F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2588110998797154E548934 /* Pods-SignUp&ImageCache.debug.xcconfig */,
+				72D36C76D3FB2E0CBA76FA67 /* Pods-SignUp&ImageCache.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2523AF5A2E601F2E7008379F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9613E6896D2988C48890583A /* Pods_SignUp_ImageCache.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6212D6C4288B1CC6000633B7 /* SignUp&ImageCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				6212D6D3288F307E000633B7 /* SignInViewModelTest.swift */,
+				6212D6D5288F30FC000633B7 /* MockSignInManager.swift */,
+				6212D6D7288F40C8000633B7 /* MockNetworkManager.swift */,
+				6212D6D9288F411E000633B7 /* ImageViewModelTest.swift */,
+			);
+			path = "SignUp&ImageCacheTests";
+			sourceTree = "<group>";
+		};
+		6212D6CC288F1F7E000633B7 /* SignInManager */ = {
+			isa = PBXGroup;
+			children = (
+				6212D6CD288F1F95000633B7 /* SignInManager.swift */,
+				6212D6CF288F2138000633B7 /* DBManager.swift */,
+				62E5F21528B42181000D44D0 /* KeychainManager.swift */,
+			);
+			path = SignInManager;
+			sourceTree = "<group>";
+		};
+		62444F6928592B4100408D26 = {
+			isa = PBXGroup;
+			children = (
+				62444F7428592B4100408D26 /* SignUp&ImageCache */,
+				62C66820288B156A006DE078 /* SignUp&ImageCacheUITests */,
+				6212D6C4288B1CC6000633B7 /* SignUp&ImageCacheTests */,
+				62444F7328592B4100408D26 /* Products */,
+				129271B1FBB241926C2056F5 /* Pods */,
+				2523AF5A2E601F2E7008379F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62444F7328592B4100408D26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62444F7228592B4100408D26 /* SignUp&ImageCache.app */,
+				62C6681F288B156A006DE078 /* SignUp&ImageCacheUITests.xctest */,
+				6212D6C3288B1CC6000633B7 /* SignUp&ImageCacheTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62444F7428592B4100408D26 /* SignUp&ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				625B271C286B6E4200EE6CE5 /* SignUp&ImageCache.entitlements */,
+				6212D6CC288F1F7E000633B7 /* SignInManager */,
+				62444FBB285BAF0300408D26 /* NetworkManager */,
+				62444FB8285BAE4900408D26 /* Model */,
+				62444FB5285A5B7400408D26 /* ViewModel */,
+				62444FA9285A482000408D26 /* Coordinators */,
+				62444FB2285A58E600408D26 /* View */,
+				62444F7528592B4100408D26 /* AppDelegate.swift */,
+				62444F7728592B4100408D26 /* SceneDelegate.swift */,
+				62444F7B28592B4100408D26 /* Main.storyboard */,
+				62444F7E28592B4100408D26 /* Assets.xcassets */,
+				62444F8028592B4100408D26 /* LaunchScreen.storyboard */,
+				62BC23802878C06A0043EB21 /* GoogleService-Info.plist */,
+				62444F8328592B4100408D26 /* Info.plist */,
+			);
+			path = "SignUp&ImageCache";
+			sourceTree = "<group>";
+		};
+		62444FA9285A482000408D26 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				62444FAA285A483100408D26 /* Coordinator.swift */,
+				62444FAC285A488300408D26 /* Storyboarded.swift */,
+				62444FB0285A4A5400408D26 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		62444FB2285A58E600408D26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62444F8928592B7600408D26 /* SignUpViewController.swift */,
+				62444FAE285A49CC00408D26 /* HomeViewController.swift */,
+				62444FB6285B99BD00408D26 /* TableViewCell.swift */,
+				62444F8B28592BD500408D26 /* SignInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62444FB5285A5B7400408D26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62444FB3285A5B4E00408D26 /* SignInViewModel.swift */,
+				625B4110285BB8CF001D36E9 /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62444FB8285BAE4900408D26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62444FB9285BAE6B00408D26 /* Model.swift */,
+				62C3E5A2286233FE00EA1D80 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62444FBB285BAF0300408D26 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				62444FBC285BAF1200408D26 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		62C66820288B156A006DE078 /* SignUp&ImageCacheUITests */ = {
+			isa = PBXGroup;
+			children = (
+				62C66821288B156A006DE078 /* SignUp_ImageCacheUITests.swift */,
+				62C66823288B156A006DE078 /* SignUp_ImageCacheUITestsLaunchTests.swift */,
+			);
+			path = "SignUp&ImageCacheUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6212D6C2288B1CC6000633B7 /* SignUp&ImageCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6212D6CB288B1CC6000633B7 /* Build configuration list for PBXNativeTarget "SignUp&ImageCacheTests" */;
+			buildPhases = (
+				6212D6BF288B1CC6000633B7 /* Sources */,
+				6212D6C0288B1CC6000633B7 /* Frameworks */,
+				6212D6C1288B1CC6000633B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6212D6C8288B1CC6000633B7 /* PBXTargetDependency */,
+			);
+			name = "SignUp&ImageCacheTests";
+			productName = "SignUp&ImageCacheTests";
+			productReference = 6212D6C3288B1CC6000633B7 /* SignUp&ImageCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62444F7128592B4100408D26 /* SignUp&ImageCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62444F8628592B4100408D26 /* Build configuration list for PBXNativeTarget "SignUp&ImageCache" */;
+			buildPhases = (
+				120D1FA8B0D334CC2D8331AE /* [CP] Check Pods Manifest.lock */,
+				62444F6E28592B4100408D26 /* Sources */,
+				62444F6F28592B4100408D26 /* Frameworks */,
+				62444F7028592B4100408D26 /* Resources */,
+				64CD039236980B2ED7D26E35 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SignUp&ImageCache";
+			packageProductDependencies = (
+				625B2766286B8AC500EE6CE5 /* FirebaseAnalytics */,
+				625B2768286B8AC500EE6CE5 /* FirebaseAnalyticsSwift */,
+				625B276A286B8AC500EE6CE5 /* FirebaseAuth */,
+				625B276C286B8AC500EE6CE5 /* FirebaseAuthCombine-Community */,
+				625B276E286B8AC500EE6CE5 /* FirebaseDatabase */,
+				625B2770286B8AC500EE6CE5 /* FirebaseDatabaseSwift */,
+				625B2772286B8AC500EE6CE5 /* FirebaseFirestore */,
+				625B2774286B8AC500EE6CE5 /* FirebaseFirestoreCombine-Community */,
+				625B2776286B8AC500EE6CE5 /* FirebaseFirestoreSwift */,
+				625B2778286B8AC500EE6CE5 /* FirebaseFunctionsCombine-Community */,
+				625B277A286B8AC500EE6CE5 /* FirebaseInAppMessaging-Beta */,
+				625B277C286B8AC500EE6CE5 /* FirebaseInAppMessagingSwift-Beta */,
+				625B277E286B8AC500EE6CE5 /* FirebaseMessaging */,
+				625B2780286B8AC500EE6CE5 /* FirebaseStorage */,
+				625B2782286B8AC500EE6CE5 /* FirebaseStorageCombine-Community */,
+				625B2785286B8B1400EE6CE5 /* Realm */,
+				625B2787286B8B1400EE6CE5 /* RealmSwift */,
+			);
+			productName = "SignUp&ImageCache";
+			productReference = 62444F7228592B4100408D26 /* SignUp&ImageCache.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62C6681E288B156A006DE078 /* SignUp&ImageCacheUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C66827288B156A006DE078 /* Build configuration list for PBXNativeTarget "SignUp&ImageCacheUITests" */;
+			buildPhases = (
+				62C6681B288B156A006DE078 /* Sources */,
+				62C6681C288B156A006DE078 /* Frameworks */,
+				62C6681D288B156A006DE078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62C66826288B156A006DE078 /* PBXTargetDependency */,
+			);
+			name = "SignUp&ImageCacheUITests";
+			productName = "SignUp&ImageCacheUITests";
+			productReference = 62C6681F288B156A006DE078 /* SignUp&ImageCacheUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62444F6A28592B4100408D26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					6212D6C2288B1CC6000633B7 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 62444F7128592B4100408D26;
+					};
+					62444F7128592B4100408D26 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					62C6681E288B156A006DE078 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 62444F7128592B4100408D26;
+					};
+				};
+			};
+			buildConfigurationList = 62444F6D28592B4100408D26 /* Build configuration list for PBXProject "SignUp&ImageCache" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62444F6928592B4100408D26;
+			packageReferences = (
+				625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				625B2784286B8B1400EE6CE5 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 62444F7328592B4100408D26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62444F7128592B4100408D26 /* SignUp&ImageCache */,
+				62C6681E288B156A006DE078 /* SignUp&ImageCacheUITests */,
+				6212D6C2288B1CC6000633B7 /* SignUp&ImageCacheTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6212D6C1288B1CC6000633B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62444F7028592B4100408D26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62444F8228592B4100408D26 /* LaunchScreen.storyboard in Resources */,
+				62BC23812878C06A0043EB21 /* GoogleService-Info.plist in Resources */,
+				62444F7F28592B4100408D26 /* Assets.xcassets in Resources */,
+				62444F7D28592B4100408D26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C6681D288B156A006DE078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		120D1FA8B0D334CC2D8331AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignUp&ImageCache-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64CD039236980B2ED7D26E35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignUp&ImageCache/Pods-SignUp&ImageCache-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignUp&ImageCache/Pods-SignUp&ImageCache-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SignUp&ImageCache/Pods-SignUp&ImageCache-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6212D6BF288B1CC6000633B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6212D6D8288F40C8000633B7 /* MockNetworkManager.swift in Sources */,
+				6212D6D4288F307E000633B7 /* SignInViewModelTest.swift in Sources */,
+				6212D6DA288F411E000633B7 /* ImageViewModelTest.swift in Sources */,
+				6212D6D6288F30FC000633B7 /* MockSignInManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62444F6E28592B4100408D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6212D6CE288F1F95000633B7 /* SignInManager.swift in Sources */,
+				62444FBD285BAF1200408D26 /* NetworkManager.swift in Sources */,
+				62444F8C28592BD500408D26 /* SignInViewController.swift in Sources */,
+				62444FB1285A4A5400408D26 /* MainCoordinator.swift in Sources */,
+				62444F8A28592B7600408D26 /* SignUpViewController.swift in Sources */,
+				62444FAB285A483100408D26 /* Coordinator.swift in Sources */,
+				62E5F21628B42181000D44D0 /* KeychainManager.swift in Sources */,
+				62444F7628592B4100408D26 /* AppDelegate.swift in Sources */,
+				62C3E5A3286233FE00EA1D80 /* User.swift in Sources */,
+				62444FB7285B99BD00408D26 /* TableViewCell.swift in Sources */,
+				62444FB4285A5B4E00408D26 /* SignInViewModel.swift in Sources */,
+				62444F7828592B4100408D26 /* SceneDelegate.swift in Sources */,
+				6212D6D0288F2138000633B7 /* DBManager.swift in Sources */,
+				62444FBA285BAE6B00408D26 /* Model.swift in Sources */,
+				62444FAF285A49CC00408D26 /* HomeViewController.swift in Sources */,
+				62444FAD285A488300408D26 /* Storyboarded.swift in Sources */,
+				625B4111285BB8CF001D36E9 /* ImageViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C6681B288B156A006DE078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C66822288B156A006DE078 /* SignUp_ImageCacheUITests.swift in Sources */,
+				62C66824288B156A006DE078 /* SignUp_ImageCacheUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6212D6C8288B1CC6000633B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62444F7128592B4100408D26 /* SignUp&ImageCache */;
+			targetProxy = 6212D6C7288B1CC6000633B7 /* PBXContainerItemProxy */;
+		};
+		62C66826288B156A006DE078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62444F7128592B4100408D26 /* SignUp&ImageCache */;
+			targetProxy = 62C66825288B156A006DE078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62444F7B28592B4100408D26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62444F7C28592B4100408D26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62444F8028592B4100408D26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62444F8128592B4100408D26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6212D6C9288B1CC6000633B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RX5VUTPWS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feyzatopgul.SignUp-ImageCacheTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUp&ImageCache.app/SignUp&ImageCache";
+			};
+			name = Debug;
+		};
+		6212D6CA288B1CC6000633B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RX5VUTPWS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feyzatopgul.SignUp-ImageCacheTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUp&ImageCache.app/SignUp&ImageCache";
+			};
+			name = Release;
+		};
+		62444F8428592B4100408D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2588110998797154E548934 /* Pods-SignUp&ImageCache.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62444F8528592B4100408D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D36C76D3FB2E0CBA76FA67 /* Pods-SignUp&ImageCache.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62444F8728592B4100408D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2588110998797154E548934 /* Pods-SignUp&ImageCache.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SignUp&ImageCache/SignUp&ImageCache.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9RX5VUTPWS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SignUp&ImageCache/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feyzatopgul.SignUp-ImageCache";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62444F8828592B4100408D26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D36C76D3FB2E0CBA76FA67 /* Pods-SignUp&ImageCache.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SignUp&ImageCache/SignUp&ImageCache.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9RX5VUTPWS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SignUp&ImageCache/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feyzatopgul.SignUp-ImageCache";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62C66828288B156A006DE078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RX5VUTPWS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feyzatopgul.SignUp-ImageCacheUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SignUp&ImageCache";
+			};
+			name = Debug;
+		};
+		62C66829288B156A006DE078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RX5VUTPWS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feyzatopgul.SignUp-ImageCacheUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SignUp&ImageCache";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6212D6CB288B1CC6000633B7 /* Build configuration list for PBXNativeTarget "SignUp&ImageCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6212D6C9288B1CC6000633B7 /* Debug */,
+				6212D6CA288B1CC6000633B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62444F6D28592B4100408D26 /* Build configuration list for PBXProject "SignUp&ImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62444F8428592B4100408D26 /* Debug */,
+				62444F8528592B4100408D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62444F8628592B4100408D26 /* Build configuration list for PBXNativeTarget "SignUp&ImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62444F8728592B4100408D26 /* Debug */,
+				62444F8828592B4100408D26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62C66827288B156A006DE078 /* Build configuration list for PBXNativeTarget "SignUp&ImageCacheUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C66828288B156A006DE078 /* Debug */,
+				62C66829288B156A006DE078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		625B2784286B8B1400EE6CE5 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		625B2766286B8AC500EE6CE5 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		625B2768286B8AC500EE6CE5 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		625B276A286B8AC500EE6CE5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		625B276C286B8AC500EE6CE5 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		625B276E286B8AC500EE6CE5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		625B2770286B8AC500EE6CE5 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		625B2772286B8AC500EE6CE5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		625B2774286B8AC500EE6CE5 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		625B2776286B8AC500EE6CE5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		625B2778286B8AC500EE6CE5 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		625B277A286B8AC500EE6CE5 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		625B277C286B8AC500EE6CE5 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		625B277E286B8AC500EE6CE5 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		625B2780286B8AC500EE6CE5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		625B2782286B8AC500EE6CE5 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2765286B8AC500EE6CE5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		625B2785286B8B1400EE6CE5 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2784286B8B1400EE6CE5 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		625B2787286B8B1400EE6CE5 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 625B2784286B8B1400EE6CE5 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 62444F6A28592B4100408D26 /* Project object */;
+}
