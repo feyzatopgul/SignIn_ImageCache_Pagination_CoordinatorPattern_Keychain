@@ -47,7 +47,6 @@
 		625B2788286B8B1400EE6CE5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 625B2787286B8B1400EE6CE5 /* RealmSwift */; };
 		625B4111285BB8CF001D36E9 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625B4110285BB8CF001D36E9 /* ImageViewModel.swift */; };
 		62ABA85695B6A041CA59352F /* Pods_SignUp_ImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9613E6896D2988C48890583A /* Pods_SignUp_ImageCache.framework */; };
-		62BC23812878C06A0043EB21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62BC23802878C06A0043EB21 /* GoogleService-Info.plist */; };
 		62C3E5A3286233FE00EA1D80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3E5A2286233FE00EA1D80 /* User.swift */; };
 		62C66822288B156A006DE078 /* SignUp_ImageCacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C66821288B156A006DE078 /* SignUp_ImageCacheUITests.swift */; };
 		62C66824288B156A006DE078 /* SignUp_ImageCacheUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C66823288B156A006DE078 /* SignUp_ImageCacheUITestsLaunchTests.swift */; };
@@ -98,7 +97,6 @@
 		62444FBC285BAF1200408D26 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		625B271C286B6E4200EE6CE5 /* SignUp&ImageCache.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SignUp&ImageCache.entitlements"; sourceTree = "<group>"; };
 		625B4110285BB8CF001D36E9 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
-		62BC23802878C06A0043EB21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		62C3E5A2286233FE00EA1D80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		62C6681F288B156A006DE078 /* SignUp&ImageCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SignUp&ImageCacheUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C66821288B156A006DE078 /* SignUp_ImageCacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_ImageCacheUITests.swift; sourceTree = "<group>"; };
@@ -227,7 +225,6 @@
 				62444F7B28592B4100408D26 /* Main.storyboard */,
 				62444F7E28592B4100408D26 /* Assets.xcassets */,
 				62444F8028592B4100408D26 /* LaunchScreen.storyboard */,
-				62BC23802878C06A0043EB21 /* GoogleService-Info.plist */,
 				62444F8328592B4100408D26 /* Info.plist */,
 			);
 			path = "SignUp&ImageCache";
@@ -426,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				62444F8228592B4100408D26 /* LaunchScreen.storyboard in Resources */,
-				62BC23812878C06A0043EB21 /* GoogleService-Info.plist in Resources */,
 				62444F7F28592B4100408D26 /* Assets.xcassets in Resources */,
 				62444F7D28592B4100408D26 /* Main.storyboard in Resources */,
 			);
